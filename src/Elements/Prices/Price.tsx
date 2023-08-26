@@ -23,22 +23,11 @@ const Price = ({
 
   return (
     <div
-      className="h-[453px] w-[350px] flex flex-col justify-between items-center text-center shadow-lg rounded-xl"
-      style={
+      className={`h-[453px] w-[350px] flex flex-col justify-between items-center text-center shadow-lg rounded-xl xl:max-w-[350px] xl:w-full xl:whitespace-break-spaces ${
         isCool
-          ? {
-              background:
-                "linear-gradient(130deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%))",
-              height: "500px",
-              padding: "54px 31px",
-              color: "hsl(240, 78%, 98%)",
-            }
-          : {
-              background: "white",
-              padding: "31px",
-              color: "hsl(232, 13%, 33%)",
-            }
-      }
+          ? " bg-gradient-to-br from-linear-gradient-from to-linear-gradient-to text-very-light-grayish-blue h-[500px] lg:h-[453px] py-[54px] px-[31px] lg:p-[31px]"
+          : "bg-white p-[31px] text-dark-grayish-blue"
+      }`}
     >
       <p>{name}</p>
       <h1 className="text-7xl flex items-center">

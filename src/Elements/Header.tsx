@@ -5,7 +5,7 @@ const Header = () => {
   const changeIsMon = usePriceStore((s) => s.changeIsMon);
 
   return (
-    <header className="flex flex-col justify-center items-center">
+    <header className="flex flex-col justify-center items-center relative z-10">
       <h2 className="text-3xl text-grayish-blue">Our Pricing</h2>
       <div className="flex items-start gap-6 text-light-grayish-blue my-12">
         <p>Annually</p>

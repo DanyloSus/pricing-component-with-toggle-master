@@ -1,6 +1,6 @@
-const withMT = require("@material-tailwind/react/utils/withMT");
+import withMT from "@material-tailwind/react/utils/withMT";
 
-module.exports = withMT({
+export default withMT({
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -12,6 +12,9 @@ module.exports = withMT({
         "light-grayish-blue": "hsl(234, 14%, 74%)",
         "grayish-blue": "hsl(233, 13%, 49%)",
         "dark-grayish-blue": "hsl(232, 13%, 33%)",
+      },
+      screens: {
+        xl: { max: "1024px" },
       },
     },
   },

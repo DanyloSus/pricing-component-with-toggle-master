@@ -2,7 +2,7 @@ import Price from "./Prices/Price";
 
 const Prices = () => {
   return (
-    <section className="flex items-center relative z-10">
+    <section className="flex items-center relative z-10 xl:flex-col xl:gap-8 xl:justify-center xl:w-screen">
       <Price
         name="Basic"
         priceAnn={199.99}
