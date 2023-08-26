@@ -23,9 +23,9 @@ const Price = ({
 
   return (
     <div
-      className={`h-[453px] w-[350px] flex flex-col justify-between items-center text-center shadow-lg rounded-xl xl:max-w-[350px] xl:w-full xl:whitespace-break-spaces ${
+      className={`h-[453px] w-[350px] flex flex-col justify-between items-center text-center shadow-lg rounded-xl xl:max-w-[350px] xl:w-full xl:whitespace-break-spaces reveal ${
         isCool
-          ? " bg-gradient-to-br from-linear-gradient-from to-linear-gradient-to text-very-light-grayish-blue h-[500px] lg:h-[453px] py-[54px] px-[31px] lg:p-[31px]"
+          ? " bg-gradient-to-br from-linear-gradient-from to-linear-gradient-to text-very-light-grayish-blue h-[500px] xl:h-[453px] py-[54px] px-[31px] xl:p-[31px]"
           : "bg-white p-[31px] text-dark-grayish-blue"
       }`}
     >
